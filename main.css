@@ -1,0 +1,341 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*       to hide scrollbar:          */
+*::-webkit-scrollbar{
+  display:none;  
+}
+
+body{
+ 
+    margin:0;
+     overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+  width:100vw;
+    align-items: center;
+    z-index:100;
+    top:0px;
+    display:grid;
+    grid-template-columns: 550px 130px 130px 130px 130px 130px;
+    justify-content: space-around;
+    height:10vh;
+    /* background-color:rgb(236, 232, 26); */
+    font-size: 1.5rem;
+}
+
+.sticky{
+  position:fixed;
+  background-image:linear-gradient(to right, white,rgb(236, 232, 26));
+  transition: background-color 0.5s ease;
+}
+
+#nav-brand{
+  margin-left:20px;
+  text-align: left;
+    color:hwb(205 0% 24%);
+    font-size: 2.7rem;
+    font-family: 'Acme', sans-serif;
+    text-decoration: none;
+}
+
+.nav-items{
+  position:relative;
+  padding : 10px;
+    text-align: center;
+    text-decoration: none;
+    color:darkslategrey;
+}
+
+.nav-items:hover {
+  animation-name: outlline;
+  animation-duration:.0.5s;
+  /* background-color:hwb(205 0% 24%) ; */
+  border-radius : 5px;
+  /* outline: 3px rgb(236, 232, 26) solid; */
+  /* color: rgb(236, 232, 26);  */
+  text-decoration: underline;
+  animation-fill-mode: forwards;
+  /* text-decoration: underline; */
+}
+
+
+.mySlides {display:none ;  width:100vw; height:100vh;  overflow: hidden;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  z-index :-1;
+  max-width: 1000px;
+  position: relative;
+
+}
+
+.trekly-text {
+  color: #a22222;
+  font-size: 50px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.trekly-tv-text{
+  color: #47549f;
+  font-size: 50px;
+  padding: 8px 12px;
+  margin:10% auto;
+  width: 50%;
+  text-align: center;
+}
+
+.trekly-book-text{
+  color:rgb(57, 196, 57);
+  width:40%;
+  font-size: 3em;
+  margin:40px auto;
+}
+
+.trekly-ipl-text{
+  color:rgb(219, 39, 165);
+  width:40%;
+  font-size: 3em;
+  margin:40px auto;
+}
+.trekly-summer-deals-text{
+  color:rgb(134, 245, 15);
+  width:40%;
+  font-size: 3.5em;
+  margin:40px auto; 
+}
+.line {
+  height: 5px;
+  width: 100px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 5px;
+  display:inline-block;
+  position: relative;
+  left:420px;
+  bottom:25px;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  /* background-color: #717171; */
+  background-color:#0071c2 ;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+#offer-container{ 
+  text-align: center;
+  right:50px;
+
+  width:100vw;
+  /* border: solid 1px black; */
+  /* border-radius: 10px; */
+  /* margin:50px; */
+  padding:50px;
+  background-color: grey;
+}
+
+.offer-heading{
+  margin-bottom:80px;
+  text-align :center;
+  font-size: 50px;
+}
+
+.offer-main-img{
+  float:right;
+  margin-left:50px;
+  margin-right : 40px;
+}
+
+.offers-class{
+  clear:right;
+  overflow-x : auto;
+  display:grid;
+  grid-template-columns: 500px  500px 500px 500px 500px ;
+}
+
+.offers{
+  position:relative;
+  border: solid 1px black;
+  border-radius:20px;
+  margin:20px;
+  padding:20px;
+  height:200px;
+}
+
+.last-offer{
+  padding-right:80px
+}
+
+.offer-img-link{
+  text-decoration: none;
+  color:black;
+    position:absolute;
+    top:160px;
+    left:380px;
+}
+.offer-img-link:hover{
+  text-decoration: underline;
+  animation-name: outlline;
+  animation-duration:0.05s;
+  animation-fill-mode: forwards;
+
+}
+
+.offer-place-name{
+    color:black;
+    position:absolute;
+    top:125px;
+    left:20px;
+    font-size: 1.5rem;
+}
+
+#section2{
+  background-color: rgb(116, 151, 232);
+}
+
+.travel-container{
+   z-index:5;
+   display:grid;
+   grid-template-columns:455px 455px 455px; 
+   height : 300px;
+}
+
+.travel-main-heading{
+  text-align: center;
+  margin:100px;
+  font-size: 50px;
+
+}
+.travel-destinations{
+  position:relative;
+  border:solid 1px black;
+  border-radius : 5px;
+  margin:20px;
+  padding:20px;
+}
+
+.travel-img-link{
+  text-decoration: none;
+    color:black;
+    position:absolute;
+    top:220px;
+    left:340px;
+    z-index: 50;
+}
+
+.travel-img-link:hover{
+  text-decoration: underline;
+  animation-name: outlline;
+  animation-duration:0.05s;
+  animation-fill-mode: forwards;
+
+}
+
+
+.travel-place-name{
+  font-size: 1.6rem;
+  text-decoration: none;
+    color:black;
+    position:absolute;
+    top:185px;
+    left:20px;
+    z-index: 50;
+}
+
+.travel-heading{
+  margin:20px;
+}
+
+
+@keyframes outlline {
+  from{ font-size: 100%;}
+  to{ font-size: 120%;}
+}
+
+.booking-page-info{
+  text-align : center;
+}
+
+.booking-heading{
+  margin:50px;
+}
+/* .booking-text{
+  display:grid;
+  grid-template-columns: auto auto;
+
+} */
+
+.booking{
+  height:800px;
+}
+
+.bookly-button{ 
+  height:30px;
+  width:200px;
+
+}
+.bookly-button-text{
+  font-size: 20px;
+  padding:5px;
+}
+
+.review-container{
+  display:grid;
+  grid-template-columns: 600px 600px 600px 600px 600px;
+  overflow-x : scroll;
+}
+
+.review{
+  text-align: center;
+  margin:20px;
+  border: solid 1px black;
+  border-radius:5px;
+}
+
+.client-review-img{
+  margin:20px;
+  float :left;
+  height:150px;
+  width:150px;
+  border: solid 1px black;
+  border-radius : 50%;
+  
+}
+
+.review-content{
+  text-align: center;
+  border-radius: 20px;
+}
+
+.review-text{
+  padding :30px 40px;
+  /* padding-bottom:20px; */
+  line-height: 30px;
+}
+
+.review-client-name{
+  
+  padding-left : 150px;
+}
