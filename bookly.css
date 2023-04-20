@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+    display:none;  
+  }
+
+*{
+box-sizing: border-box; 
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(138, 89, 30);
+}
+
+.place{
+    display:none;
+}
+
+.print-not-available-message{
+    margin : 20px;
+    
+}
+
+.print-not-available-message a{
+    padding-left :50px;
+   text-decoration: none;
+   color:rgb(57, 198, 198);
+   transition : font-size .2s;
+    
+}
+.print-not-available-message a:hover{
+
+text-decoration: underline;  
+}
+
+.hotels-container{
+    margin:50px;
+
+}
+
+.hotel{
+  border: solid 1px black;
+  width:1000px;
+  height:200px;
+  margin:20px;
+}
+
+.hotel-img{
+    margin-right:50px;
+    height:200px;
+    width:200px;
+    float:left;
+    border: solid 1px black;
+}
+
+.hotel-text{
+
+}
+
+
+
